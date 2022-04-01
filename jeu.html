@@ -8,50 +8,184 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<script src="https://kit.fontawesome.com/c14e70349f.js" crossorigin="anonymous"></script><!--lien fontawesome-->
 	<title>Araig.Net Jeu </title>
+	<link rel="stylesheet" href="nicepage.css" media="screen">
+  <link rel="stylesheet" href="JEU.css" media="screen">
+  <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
 	<link rel="icon" type="image/png" href=""><!--favicon-->
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P:400">
+	<link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?">
+	<script type="application/ld+json">
+		{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": ""
+    }
+  </script>
+    <style type="text/css"> 
+          DIV.case { 
+  border: solid red;
+  border-width: 1px;  
+  position: absolute; 
+  width: 100px; height: 100px;
+  }
+  IMG.case {
+  width: 100px; height: 100px;
+  } </style>
+        <script language="javascript"> 
+  function stop(i) {
+    var M=0;var id=16;
+    yy=document.getElementById(i).style.top;
+    xx=document.getElementById(i).style.left;
+    yid=document.getElementById(id).style.top;
+    xid=document.getElementById(id).style.left;
+    if ((xx==xid) && (yy=="200px") && (yid=="300px")) {M=1;}
+    if ((xx==xid) && (yy=="100px") && (yid=="200px")) {M=1;}
+    if ((xx==xid) && (yy=="0px") && (yid=="100px")) {M=1;}
+    if ((xx==xid) && (yid=="200px") && (yy=="300px")) {M=1;}
+    if ((xx==xid) && (yid=="100px") && (yy=="200px")) {M=1;}
+    if ((xx==xid) && (yid=="0px") && (yy=="100px")) {M=1;}
+    if ((yy==yid) && (xx=="200px") && (xid=="300px")) {M=1;}
+    if ((yy==yid) && (xx=="100px") && (xid=="200px")) {M=1;}
+    if ((yy==yid) && (xx=="0px") && (xid=="100px")) {M=1;}
+    if ((yy==yid) && (xid=="200px") && (xx=="300px")) {M=1;}
+    if ((yy==yid) && (xid=="100px") && (xx=="200px")) {M=1;}
+    if ((yy==yid) && (xid=="0px") && (xx=="100px")) {M=1;}
+    if (M==1){
+    document.getElementById(i).style.top=yid;
+    document.getElementById(i).style.left=xid;
+    document.getElementById(16).style.top=yy;
+    document.getElementById(16).style.left=xx;
+    id=i;}
+    if ((document.getElementById(1).style.top=="0px")&&(document.getElementById(1).style.left=="0px")&&
+    (document.getElementById(2).style.top=="100px")&&(document.getElementById(2).style.left=="0px")&&
+    (document.getElementById(3).style.top=="200px")&&(document.getElementById(4).style.left=="0px")&&
+    (document.getElementById(4).style.top=="300px")&&(document.getElementById(4).style.left=="0px")&&
+    (document.getElementById(5).style.top=="0px")&&(document.getElementById(5).style.left=="100px")&&
+    (document.getElementById(6).style.top=="100px")&&(document.getElementById(6).style.left=="100px")&&
+    (document.getElementById(7).style.top=="200px")&&(document.getElementById(7).style.left=="100px")&&
+    (document.getElementById(8).style.top=="300px")&&(document.getElementById(8).style.left=="100px")&&
+    (document.getElementById(9).style.top=="0px")&&(document.getElementById(9).style.left=="200px")&&
+    (document.getElementById(10).style.top=="100px")&&(document.getElementById(10).style.left=="200px")&&
+    (document.getElementById(11).style.top=="200px")&&(document.getElementById(11).style.left=="200px")&&
+    (document.getElementById(12).style.top=="300px")&&(document.getElementById(12).style.left=="200px")&&
+    (document.getElementById(13).style.top=="0px")&&(document.getElementById(13).style.left=="300px")&&
+    (document.getElementById(14).style.top=="100px")&&(document.getElementById(14).style.left=="300px")&&
+    (document.getElementById(15).style.top=="200px")&&(document.getElementById(15).style.left=="300px")&&
+    (document.getElementById(16).style.top=="300px")&&(document.getElementById(16).style.left=="300px"))
+    {document.getElementById(16).style.visibility="visible";
+     document.getElementById(17).style.visibility="visible";}
+    } </script>
 </head>
-<body>
+<body alink="#000088" link="#0000ff" vlink="#ff0000">
 
 	
 	<!-- Header -->
-	<header class="w3-container w3-center" style="padding:128px 16px">	
-		<h1 class="w3-margin w3-jumbo">Bienvenue sur Araig.Net</h1><!--gros titre au dessus de la nav-->
+	<header class="w3-container w3-center" style="padding:10px">
+		<a href="acceuil.html">
+		<img id="retour_acceuil" src="images/bureau 100px.png">
+		</a>
+		<h1 class="w3-jumbo" style="margin: 60px 220px ">Notre Jeu</h1><!--gros titre au dessus de la nav-->
 	</header>
 
 	<!--Navbar--> 
 	<div id="bande" class="w3-container w3-center"> 
 	  <div id="case" class="w3-bar w3-card w3-center w3-large">
 	    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-	    <a href="acceuil.html" target="_blank" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Accueil</a>
-	    <a href="jeu.html" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Jeu</a>
-	    <a href="Réalisations.html" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Réalisations</a>
-	    <a href="Cv.html" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Cv</a>
-	    <a href="Blog.html" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Blog</a>
-	    <a href="Contacts.html" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contatcs</a>
+	    <a href="acceuil.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Accueil</a>
+	    <a href="jeu.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Jeu</a>
+	    <a href="Réalisations.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Réalisations</a>
+	    <a href="Cv.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Cv</a>
+	    <a href="Blog.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Blog</a>
+	    <a href="Contacts.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contatcs</a>
 	  </div>
 	  <!-- Navbar on small screens -->
 	  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-	    <a href="jeu.html" target="_blank" class="w3-bar-item w3-button w3-padding-large">Jeu</a>
-	    <a href="Réalisations.html" target="_blank" class="w3-bar-item w3-button w3-padding-large">Réalisations</a>
-	    <a href="Cv.html" target="_blank" class="w3-bar-item w3-button w3-padding-large">Cv</a>
-	    <a href="Blog.html" target="_blank" class="w3-bar-item w3-button w3-padding-large">Blog</a>
-	    <a href="Contacts.html" target="_blank" class="w3-bar-item w3-button w3-padding-large">Contacts</a>
+	    <a href="jeu.html" class="w3-bar-item w3-button w3-padding-large">Jeu</a>
+	    <a href="Réalisations.html" class="w3-bar-item w3-button w3-padding-large">Réalisations</a>
+	    <a href="Cv.html" class="w3-bar-item w3-button w3-padding-large">Cv</a>
+	    <a href="Blog.html" class="w3-bar-item w3-button w3-padding-large">Blog</a>
+	    <a href="Contacts.html" class="w3-bar-item w3-button w3-padding-large">Contacts</a>
 	  </div>
 	</div>
 
-	
+	<!--partie texte taquin-->
+	<section class="u-align-center u-clearfix u-custom-color-1 u-valign-top u-section-1" id="carousel_63ef">
+          <div class="u-align-center u-container-style u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-1">
+          <div class="u-container-layout u-container-layout-1">
+          <h6 class="u-custom-font u-text u-text-custom-color-2 u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000">VENEZ JOUER ICI !<br>AU TAQUIN DE L'ARAIG.NET
+          </h6>
+          <h2 class="u-custom-font u-text u-text-custom-color-3 u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="">GAME CHANNEL</h2>
+          <h6 class="u-custom-font u-text u-text-custom-color-2 u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1000"> Cliquez sur un carré, à côté du carré noir pour le déplacer</h6>
+        </div>
+        </div>
+        <div class="u-clearfix u-custom-html u-custom-html-1">
 
+
+<!--TAQUIN-->
+
+        <div style="border: 20px outset rgb(181, 147, 125); position: absolute; 
+            top: 50px; left: 520px; width: 440px; height: 440px; background-color: black;">
+          <div class="case" id="1" onclick="stop(1)" style="top: 0px; left: 0px;"><img class="case" src="01/img1.jpg"></div>
+
+          <div class="case" id="2" onclick="stop(2)" style="top: 0px; left: 100px;"><img class="case" src="01/img2.jpg"></div>
+
+          <div class="case" id="3" onclick="stop(3)" style="top: 0px; left: 200px;"><img class="case" src="01/img3.jpg"></div>
+
+          <div class="case" id="4" onclick="stop(4)" style="top: 0px; left: 300px;"><img class="case" src="01/img4.jpg"></div>
+
+          <div class="case" id="5" onclick="stop(5)" style="top: 100px; left: 0px;"><img class="case" src="01/img5.jpg"></div>
+
+          <div class="case" id="6" onclick="stop(6)" style="top: 100px; left: 100px;"><img class="case" src="01/img6.jpg"></div>
+
+          <div class="case" id="7" onclick="stop(7)" style="top: 100px; left: 200px;"><img class="case" src="01/img7.jpg"></div>
+
+          <div class="case" id="8" onclick="stop(8)" style="top: 100px; left: 300px;"><img class="case" src="01/img8.jpg"></div>
+
+          <div class="case" id="9" onclick="stop(9)" style="top: 200px; left: 0px;"><img class="case" src="01/img9.jpg"></div>
+
+          <div class="case" id="10" onclick="stop(10)" style="top: 200px; left: 100px;"><img class="case" src="01/img10.jpg"></div>
+
+          <div class="case" id="11" onclick="stop(11)" style="top: 200px; left: 200px;"><img class="case" src="01/img11.jpg"></div>
+
+          <div class="case" id="12" onclick="stop(12)" style="top: 200px; left: 300px;"><img class="case" src="01/img12.jpg"></div>
+
+          <div class="case" id="13" onclick="stop(13)" style="top: 300px; left: 0px;"><img class="case" src="01/img13.jpg"></div>
+
+          <div class="case" id="14" onclick="stop(14)" style="top: 300px; left: 100px;"><img class="case" src="01/img14.jpg"></div>
+
+          <div class="case" id="15" onclick="stop(15)" style="top: 300px; left: 200px;"><img class="case" src="01/img15.jpg"></div>
+
+          <div class="case" id="16" style="top: 300px; left: 300px; visibility: hidden;"><img class="case" src="01/img16.jpg"></div>
+
+        </div>
+
+        <div style="position: absolute; top: 155px; left: 1120px;">
+          <img style="width: 250px; height: 250px;" src="01/imgt.jpg">
+        </div>
+        
+        <div id="17" style="position: absolute; visibility: hidden; top: 0px; left: 1020px;"> <h2 class="u-custom-font u-text u-text-custom-color-3 u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="">BRAVO!</h2></div>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+      </div>
+    </section>
 
 
 <!-- Footer -->
-	<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+	<footer class="w3-container w3-center w3-opacity" style="padding:10px 16px">
 		<div>
 			<p>0237000000</p><!--téléphone-->
 			<p>15 rue du grand faubourg 28000 Chartres</p><!--adresse-->
 			<p>SARL Araig.Net</p><!--statut juridique-->
+			
 		</div>
-	  <div class="w3-xlarge w3-padding-32"><!--Réseaux sociaux-->
+	  <div class="w3-xlarge " style="padding:10px 16px"><!--Réseaux sociaux-->
 	    <i class="fa fa-facebook-official w3-hover-opacity"></i>
 	    <i class="fa fa-instagram w3-hover-opacity"></i>
 	    <i class="fa fa-snapchat w3-hover-opacity"></i>
@@ -59,6 +193,10 @@
 	    <i class="fa fa-twitter w3-hover-opacity"></i>
 	    <i class="fa fa-linkedin w3-hover-opacity"></i>
 	 </div>
+	 	<div style="padding:10px 16px;">
+	 		<a href="mentions légales.html"> Mentions légales </a>
+			<a href="Politiques des cookies.html"> Politiques des cookies</a>
+	 	</div>
 	</footer>
 
 
