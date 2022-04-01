@@ -26,3 +26,9 @@ header{
 #ordinateur{
 	color: #d6bcab
 }/*deuxieme image*/
+#retour_acceuil{
+	padding: 30px 30px 30px;
+	margin: 30px 40px;
+	float: left;
+	border-radius: 50%;
+}
