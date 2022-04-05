@@ -39,7 +39,7 @@
 }
 
 .u-section-1 .u-image-2 {
-  background-image: url("images/Aregnet_Mascot_v5_900X900-71.png");
+  background-image: url("images/Mascote_Sculpteure_1MAJverso.png");
   min-height: 342px;
   background-position: 50% 50%;
 }
@@ -69,7 +69,7 @@
 
 .u-section-1 .u-image-3 {
   min-height: 313px;
-  background-image: url("images/7442a5ae603d27d1cf50ce8be906c2bd.jpeg");
+  background-image: url("images/93ca41f399f3196923c769da96fc2aec.jpeg");
   background-position: 50% 50%;
 }
 
@@ -79,8 +79,13 @@
 
 .u-section-1 .u-image-4 {
   min-height: 337px;
-  background-image: url("images/93ca41f399f3196923c769da96fc2aec.jpeg");
+  background-image: url("images/Mascote_Sculpteure_1MAJ.png");
   background-position: 50% 50%;
+  --animation-custom_in-translate_x: 0px;
+  --animation-custom_in-translate_y: 300px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 1;
 }
 
 .u-section-1 .u-container-layout-6 {
@@ -115,7 +120,7 @@
   }
 
   .u-section-1 .u-layout-cell-1 {
-    min-height: 100px;
+    min-height: 540px;
   }
 
   .u-section-1 .u-text-1 {
@@ -137,7 +142,7 @@
   }
 
   .u-section-1 .u-layout-cell-4 {
-    min-height: 100px;
+    min-height: 258px;
   }
 
   .u-section-1 .u-text-3 {
@@ -153,7 +158,7 @@
   }
 
   .u-section-1 .u-layout-cell-7 {
-    min-height: 100px;
+    min-height: 278px;
   }
 
   .u-section-1 .u-text-4 {
@@ -165,6 +170,10 @@
 @media (max-width: 991px) {
   .u-section-1 .u-sheet-1 {
     min-height: 837px;
+  }
+
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 100px;
   }
 
   .u-section-1 .u-text-1 {
@@ -183,6 +192,10 @@
     min-height: 216px;
   }
 
+  .u-section-1 .u-layout-cell-4 {
+    min-height: 100px;
+  }
+
   .u-section-1 .u-container-layout-4 {
     padding-left: 10px;
     padding-right: 10px;
@@ -193,12 +206,16 @@
   }
 
   .u-section-1 .u-image-3 {
-    min-height: 198px;
     background-position: 6.34% 50%;
+    min-height: 198px;
   }
 
   .u-section-1 .u-image-4 {
     min-height: 213px;
+  }
+
+  .u-section-1 .u-layout-cell-7 {
+    min-height: 100px;
   }
 
   .u-section-1 .u-text-4 {

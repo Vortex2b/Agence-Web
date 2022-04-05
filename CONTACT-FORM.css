@@ -3,18 +3,23 @@
 }
 
 .u-section-1 .u-sheet-1 {
-  min-height: 756px;
+  min-height: 1122px;
 }
 
 .u-section-1 .u-layout-wrap-1 {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  width: 1172px;
+  margin: 50px -32px 60px auto;
 }
 
 .u-section-1 .u-image-1 {
   min-height: 657px;
-  background-image: url("images/Aregnet_Mascot_v5_900X900-3.png");
+  background-image: url("images/Mascote_contacts_1-Copie1.png");
   background-position: 50% 50%;
+  --animation-custom_in-translate_x: 0px;
+  --animation-custom_in-translate_y: 0px;
+  --animation-custom_in-opacity: 0;
+  --animation-custom_in-rotate: 0deg;
+  --animation-custom_in-scale: 0.3;
 }
 
 .u-section-1 .u-container-layout-1 {
@@ -27,18 +32,19 @@
 }
 
 .u-section-1 .u-container-layout-2 {
-  padding: 30px;
+  padding: 14px 0;
 }
 
 .u-section-1 .u-text-1 {
   text-transform: none;
   font-size: 2.25rem;
-  margin: 0;
+  margin: 37px 25px 0;
 }
 
 .u-section-1 .u-form-1 {
-  height: 334px;
-  margin: 32px -60px 0 0;
+  height: 341px;
+  width: 574px;
+  margin: 29px auto 0;
 }
 
 .u-section-1 .u-btn-1 {
@@ -49,7 +55,8 @@
 .u-section-1 .u-text-2 {
   text-transform: none;
   font-size: 2.25rem;
-  margin: 32px 209px 0 0;
+  width: 339px;
+  margin: 87px auto 0;
 }
 
 .u-section-1 .u-social-icons-1 {
@@ -58,7 +65,7 @@
   min-height: 16px;
   width: 188px;
   min-width: 124px;
-  margin: 29px auto 0 0;
+  margin: 25px auto 0;
 }
 
 .u-section-1 .u-icon-1 {
@@ -77,37 +84,31 @@
   height: 100%;
 }
 
-.u-section-1 .u-text-3 {
-  font-style: italic;
-  margin: 11px 0 0;
-}
-
-.u-section-1 .u-btn-2 {
-  border-style: none none solid;
-  font-style: italic;
-  padding: 0;
-}
-
 @media (max-width: 1199px) {
   .u-section-1 .u-sheet-1 {
     min-height: 641px;
   }
 
+  .u-section-1 .u-layout-wrap-1 {
+    width: 940px;
+    margin-right: 0;
+  }
+
   .u-section-1 .u-image-1 {
-    min-height: 542px;
+    min-height: 527px;
   }
 
   .u-section-1 .u-layout-cell-2 {
-    min-height: 542px;
+    min-height: 527px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .u-section-1 .u-form-1 {
-    margin-right: initial;
-    margin-left: initial;
-  }
-
-  .u-section-1 .u-text-2 {
-    margin-right: 102px;
+    width: 501px;
   }
 }
 
@@ -116,16 +117,20 @@
     min-height: 514px;
   }
 
+  .u-section-1 .u-layout-wrap-1 {
+    width: 720px;
+  }
+
   .u-section-1 .u-image-1 {
-    min-height: 415px;
+    min-height: 404px;
   }
 
   .u-section-1 .u-layout-cell-2 {
     min-height: 100px;
   }
 
-  .u-section-1 .u-text-2 {
-    margin-right: 0;
+  .u-section-1 .u-form-1 {
+    width: 384px;
   }
 }
 
@@ -134,16 +139,15 @@
     min-height: 866px;
   }
 
+  .u-section-1 .u-layout-wrap-1 {
+    width: 540px;
+  }
+
   .u-section-1 .u-image-1 {
-    min-height: 667px;
+    min-height: 649px;
   }
 
   .u-section-1 .u-container-layout-1 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .u-section-1 .u-container-layout-2 {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -154,12 +158,20 @@
     min-height: 619px;
   }
 
+  .u-section-1 .u-layout-wrap-1 {
+    width: 340px;
+  }
+
   .u-section-1 .u-image-1 {
-    min-height: 420px;
+    min-height: 409px;
   }
 
   .u-section-1 .u-text-1 {
     font-size: 1.5rem;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 340px;
   }
 
   .u-section-1 .u-text-2 {
